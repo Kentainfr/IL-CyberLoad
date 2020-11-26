@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>IL-CyberLoad</title>
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<audio id="loading" autoplay loop>
+	<source src="music/loading.mp3" type="audio/mp3">
+</audio>
+
+<body>
+  <div class="container">
+  <div class="glitch" data-text="TITLE">TITLE</div>
+  <div class="glow">TITLE</div>
+  <p class="subtitle">REPLACE﹒ME</p>
+  </div>
+  <div class="scanlines"></div>
+</body>
+</html>
+
+<script>
+  var play = false;
+          var vid = document.getElementById("loading");
+          vid.volume = 0.03;
+          window.addEventListener('keyup', function(e)
+          {
+              if (e.which == 69){
+                  vid.volume = Math.min(vid.volume + 0.1,1);
+              } else if(e.which == 65){
+                  vid.volume = Math.max(vid.volume - 0.1,0);
+              };
+              if (key === 32) {
+                event.preventDefault();
+                audio.paused ? audio.play() : audio.pause();
+              }
+          });
+</script>
+<script>
+
+      var play = false;
+      var myAudio = document.getElementById("loading");
+  
+      function onKeyDown(event) {
+              switch (event.keyCode) {
+                  case 32: //SpaceBar                    
+                      if (play) {
+                          myAudio.pause();
+                          play = false;
+                      } else {
+                          myAudio.play();
+                          play = true;
+                      }
+                      break;
+              }
+        return false;
+      }
+  
+      window.addEventListener("keydown", onKeyDown, false);
+</script>
+
+</body>
+</html>
