@@ -1,2 +1,9 @@
 # IL-CyberLoad
-A loading screen for FiveM by Infinity Legion
+Loading Screen for FiveM
+
+Discord: https://discord.gg/tanPeMd
+YouTube Demonstration: 
+
+
+
+
